@@ -39,6 +39,7 @@
 
             @include mobile{
                 flex: none;
+                height: 50%;
             }
 
         }
@@ -51,7 +52,7 @@
             overflow: hidden;
 
             @include mobile{
-                height: auto;
+                height: 40%;
                 margin-bottom: 5px;
             }
 
@@ -99,7 +100,7 @@
                 flex: none;
                 margin-top: 0;
                 padding-top: 0;
-                height: 80%;
+                height: 25%;
             }
 
             .imgContainer{
@@ -111,6 +112,7 @@
                 align-items: center;
 
                 @include mobile{
+                    display: none;
                     height: 100%;
                 }
                 
