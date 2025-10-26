@@ -9,19 +9,22 @@
 - [Acknowledgements](#acknowledgements)
 
 ## Overview
+
 This project has been created to show what projects I have been working on and display some of my skills. I really enjoyed working on this project and at the time I was very new to react and found it to be a good challenge.
-+ The live website can be viewed at http://joshferguson.co.uk/
+
+- The live website can be viewed at https://josh-ferguson.github.io/Portfolio-2025/
 
 ![home](https://user-images.githubusercontent.com/43879432/187034256-af16810a-cbb4-4ecd-b4e0-d5c041a2d07a.jpg)
 
-
 ## Built With
-+ HTML
-+ SCSS
-+ JSX
-+ React.js
+
+- HTML
+- SCSS
+- JSX
+- React.js
 
 ## Features
+
 1. About me section - Small description about myself and current situation.
 
 ![about me](https://user-images.githubusercontent.com/43879432/187034610-ab0a53e3-81b2-467c-85bc-652d2f39d3aa.jpg)
@@ -39,9 +42,11 @@ This project has been created to show what projects I have been working on and d
 ![contact](https://user-images.githubusercontent.com/43879432/187034764-feb3a304-4348-4da2-b421-8ebe53d62263.jpg)
 
 ## Contact Me
-+ joshferguso@hotmail.co.uk
-+ linkedin - https://www.linkedin.com/in/josh-ferguson-955532222/
-+ Portfolio Website - https://josh-ferguson.github.io/Portfolio-2025/
+
+- joshferguso@hotmail.co.uk
+- linkedin - https://www.linkedin.com/in/josh-ferguson-955532222/
+- Portfolio Website - https://josh-ferguson.github.io/Portfolio-2025/
 
 ## Acknowledgements
-+ React Documentation - https://reactjs.org/
+
+- React Documentation - https://reactjs.org/
