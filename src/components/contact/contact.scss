@@ -1,0 +1,128 @@
+@import "../../global.scss";
+
+.contact{
+    background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../../contact-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h1{
+        color: rgb(218, 132, 4);
+        font-size: 60px;
+        margin-top: 20px;
+        overflow: hidden;
+
+        @include mobile{
+            font-size: 30px;
+            margin-top: 10px;
+        }
+    }
+
+    .linksContainer{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        margin-top: 10px;
+        padding: 5px;
+        cursor: pointer;
+
+        @include mobile{
+            width: 95%;
+            margin-top: 0;
+            flex-wrap: wrap;
+        }
+
+        span{
+
+
+            a{
+                color: white;
+                text-decoration: none;
+
+                @include mobile{
+                    font-size: 10px;
+                }
+
+                &:hover{
+                    color: rgb(197, 184, 169);
+                    text-decoration: underline;
+                }
+            }
+            &:hover{
+                color: rgb(197, 184, 169);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .formContainer{
+        width: 80%;
+        max-width: 1000px;
+        height: 70%;
+        margin-top: 30px;
+        border: 2px solid white;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile{
+            height: 80%;
+            margin-top: 5px;
+        }
+
+        form{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            input, textarea{
+                width: 90%;
+                padding: 10px;
+                margin-bottom: 30px;
+                outline: 0;
+                border: 2px solid white;
+                color: white;
+                background: rgba(0,0,0,.5);
+                font-size: 20px;
+                font-weight: bold;     
+                
+                @include mobile{
+                    margin-bottom: 10px;
+                    font-size: 15px;
+                }
+            }
+
+            input:-webkit-autofill,
+            input:-webkit-autofill:hover, 
+            input:-webkit-autofill:focus,
+            textarea:-webkit-autofill,
+            textarea:-webkit-autofill:hover,
+            textarea:-webkit-autofill:focus{
+                border: 2px solid white;
+                -webkit-text-fill-color: white;
+                -webkit-box-shadow: 0 0 0px 0px rgba(0,0,0,.5) inset;
+                transition: background-color 5000s ease-in-out 0s;
+            }
+
+            button{
+                padding: 10px 0;
+                color: white;
+                border: 2px solid white;
+                background: rgba(0,0,0,.5);
+                width: 90%;
+                font-size: 20px;
+                cursor: pointer;
+
+                @include mobile{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

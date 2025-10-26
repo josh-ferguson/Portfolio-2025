@@ -1,0 +1,179 @@
+@import "../../global.scss";
+
+.intro{
+    background-color: $maincolor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left{
+        flex: 0.5;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+
+        @include mobile{
+            flex: 0.6;
+        }
+
+        .upper-top{
+            background-color: rgb(218, 132, 4);
+            height: 20px;
+            margin: 10px 50px;
+            border-radius: 16px;
+            animation: stretchLarge 1s infinite;
+
+            @include mobile{
+                display: none;
+            }
+        }
+
+        @keyframes stretchLarge {
+            0%{
+                width: 40%;
+            }
+            50%{
+                width: 90%;
+            }
+            100%{
+                width: 40%;
+            }
+        }
+
+        .upper-bottom{
+            background-color: white;
+            height: 20px;
+            margin: 10px 0px 60px 50px;
+            border-radius: 16px;
+            animation: stretchSmall 1s infinite;
+
+            @include mobile{
+                display: none;
+            }
+        }
+
+        @keyframes stretchSmall {
+            0%{
+                width: 20%;
+            }
+            50%{
+                width: 50%;
+            }
+            100%{
+                width: 20%;
+            }
+        }
+
+        .wrapper{
+            margin: 10px 50px;
+            border-radius: 16px;
+            background-color:#3d3d3d;
+            padding: 10px;
+            -webkit-box-shadow: 0px 10px 13px -7px #000000, 3px 5px 15px 5px rgba(0,0,0,0); 
+            box-shadow: 0px 10px 13px -7px #000000, 3px 5px 15px 5px rgba(0,0,0,0);
+            transition: all 0.5s ease-in-out;
+            overflow: hidden;
+
+            @include mobile{
+                margin: 10px 20px;
+            }
+
+            &:hover{
+                transform: scale(1.03);
+
+                @include mobile{
+                    transform: none;
+                }
+            }
+
+            h1{
+                font-size: 60px;
+                color: rgb(218, 132, 4);
+                margin-bottom: 10px;
+
+                @include mobile{
+                    font-size: 30px;
+                }
+            }
+            
+            p{
+                font-size: 20px;
+                color: white;
+
+                @include mobile{
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .lower-bottom{
+            background-color: rgb(218, 132, 4);
+            height: 20px;
+            margin: 10px 50px;
+            border-radius: 16px;
+            animation: stretchLarge 1s infinite;
+
+            @include mobile{
+                display: none;
+            }
+        }
+
+        .lower-top{
+            background-color: white;
+            height: 20px;
+            margin: 60px 0px 10px 50px;
+            border-radius: 16px;
+            animation: stretchSmall 1s infinite;
+
+            @include mobile{
+                display: none;
+            }
+        }
+    }
+
+    .right{
+        flex: 0.5;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        @include mobile{
+            flex: 0.4;
+            width: 100%;
+        }
+
+        .imgContainer{
+            width: 35vw;
+            max-width: 500px;
+            height: 35vw;
+            max-height: 500px;
+            border: 5px solid rgb(218, 132, 4);
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            transform: rotate(-15deg);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+            @include mobile{
+                width: 25vw;
+                min-width: 150px;
+                height: 25vw;
+                min-height: 150px;
+                transform: none;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+}
